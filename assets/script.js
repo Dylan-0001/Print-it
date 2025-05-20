@@ -37,6 +37,10 @@ for(let i = 0; i < slides.length; i++)
 }
 updateDots();
 
+//APPLY First banner
+bannerImg.src = `./assets/images/slideshow/${slides[currentSlide].image}`;
+bannerP.innerHTML = slides[currentSlide].tagLine;
+
 //ARROW LEFT CLICK LISTENER
 arrowLeft.addEventListener("click", () => 
 {
